@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Swimmy Demo v2.0</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Swimmy WebGL Demo.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 1232px; height: 582px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title"></div>
+      </div>
+    </div>
+
+    <p align="center">Welcome to Swimmy, a simple game made by a simple guy. This is demo v2.0, released on 5/2/17.</p>
+    <p align="center">If you find any bugs, please don't hesitate to either post in the thread or to email me at chrisramerofficial@gmail.com.</p>
+    <p align="center">Thank you for helping Swimmy come out from the depths of the sea!</p>
+    <p align="center">-The awesome developer, Chris</p>
+
+    <p align="center">Controls:</br>Space OR Left Mouse Button: Float</br></p>
+
+    <p align="center">Notes:</br>*Greyed out buttons are not useable. Either I'm keeping something a secret or I haven't gotten around to programming them yet.</p>
+    <p align="center">*The secret achievements are remaining a secret, so they cannot be obtained in this demo. I gotta tortue you somehow ;)</p>
+    <p align="center">Please maximize your browser to ensure that the game's resolution fits inside the confines of the browser.</p>
+  </body>
+</html>
